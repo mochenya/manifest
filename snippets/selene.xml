@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="selene"
+           fetch="https://github.com/mochenya"
+           revision="lineage-20"/>
+
+  <remote  name="lineage"
+           fetch="https://github.com/lineageos"
+           revision="lineage-20"/>
+
+  <remote  name="mt6768"
+           fetch="https://github.com/mt6768-dev"
+           revision="lineage-20"/>
+  
+ <!-- Device Trees -->
+  <project path="device/xiaomi/selene" name="android_device_xiaomi_selene" remote="selene"/>
+
+ <!-- Kernel -->
+  <project path="kernel/xiaomi/selene" name="Sea_Kernel-Selene" remote="selene"/>
+
+ <!-- Vendor Trees -->
+  <project path="vendor/xiaomi/selene" name="android_vendor_xiaomi_selene" remote="selene"/>
+  
+ <!-- Extras -->
+  <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="lineage" revision="lineage-20"/>
+  <project path="hardware/xiaomi" name="PixelExperience/hardware_xiaomi" remote="github" revision="thirteen"/>
+  <project path="hardware/mediatek" name="android_hardware_mediatek" remote="mt6768" revision="lineage-20"/>
+
+</manifest>
